@@ -1,49 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.appsd.loadingindicatorviewbest.MainActivity">
 
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/p1" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
     <com.wang.avi.AVLoadingIndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:indicator="BallPulse"
         app:indicator_color="#C6002B"
-        
+
         />
+
     <com.wang.avi.AVLoadingIndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:indicator="BallClipRotate"
-        app:indicator_color="#C6002B"
-        />
+        app:indicator_color="#C6002B" />
 
     <com.wang.avi.AVLoadingIndicatorView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:indicator="BallScaleMultiple"
-    app:indicator_color="#C6002B"
-    />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicator="BallScaleMultiple"
+        app:indicator_color="#C6002B" />
+
     <com.wang.avi.AVLoadingIndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:indicator="BallPulseSync"
-        app:indicator_color="#C6002B"
-        />
+        app:indicator_color="#C6002B" />
+
     <com.wang.avi.AVLoadingIndicatorView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    app:indicator="CubeTransition"
-    app:indicator_color="#C6002B"
-    />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:indicator="CubeTransition"
+        app:indicator_color="#C6002B" />
+
     <com.wang.avi.AVLoadingIndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,43 +85,45 @@
 
 </LinearLayout>
 
-<!--
+    <!--
+
+https://github.com/bulbulhossen/ExplosionField
 
 
-    Indicators
+        Indicators
 
-    Here they are
+        Here they are
 
-    BallPulse
-    BallGridPulse
-    BallClipRotate
-    BallClipRotatePulse
-    SquareSpin
-    BallClipRotateMultiple
-    BallPulseRise
-    BallRotate
-    CubeTransition
-    BallZigZag
-    BallZigZagDeflect
-    BallTrianglePath
-    BallScale
-    LineScale
-    LineScaleParty
-    BallScaleMultiple
-    BallPulseSync
-    BallBeat
-    LineScalePulseOut
-    LineScalePulseOutRapid
-    BallScaleRipple
-    BallScaleRippleMultiple
-    BallSpinFadeLoader
-    LineSpinFadeLoader
-    TriangleSkewSpin
-    Pacman
-    BallGridBeat
-    SemiCircleSpin
-
-
+        BallPulse
+        BallGridPulse
+        BallClipRotate
+        BallClipRotatePulse
+        SquareSpin
+        BallClipRotateMultiple
+        BallPulseRise
+        BallRotate
+        CubeTransition
+        BallZigZag
+        BallZigZagDeflect
+        BallTrianglePath
+        BallScale
+        LineScale
+        LineScaleParty
+        BallScaleMultiple
+        BallPulseSync
+        BallBeat
+        LineScalePulseOut
+        LineScalePulseOutRapid
+        BallScaleRipple
+        BallScaleRippleMultiple
+        BallSpinFadeLoader
+        LineSpinFadeLoader
+        TriangleSkewSpin
+        Pacman
+        BallGridBeat
+        SemiCircleSpin
 
 
--->
+
+
+    -->

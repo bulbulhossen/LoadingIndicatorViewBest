@@ -28,4 +28,6 @@ dependencies {
 dependencies {
     compile 'com.wang.avi:library:1.0.0'
     compile 'com.nineoldandroids:library:2.4.0'
+
+    compile 'tyrantgit:explosionfield:1.0.0'
 }
